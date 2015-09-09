@@ -1,0 +1,33 @@
+{
+  "name": "node-express-with-react",
+  "version": "0.0.1",
+  "description": "mini templates for node-express with reactjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikasumiwt/node-express-with-react.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "react",
+    "reactjs",
+    "template"
+  ],
+  "author": "ikasumi_wt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ikasumiwt/node-express-with-react/issues"
+  },
+  "homepage": "https://github.com/ikasumiwt/node-express-with-react#readme",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.3",
+    "react-bootstrap": "^0.25.1"
+  }
+}
