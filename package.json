@@ -28,6 +28,7 @@
     "express": "^4.13.3",
     "node-jsx": "^0.13.3",
     "react": "^0.13.3",
-    "react-bootstrap": "^0.25.1"
+    "react-bootstrap": "^0.25.1",
+    "underscore": "^1.8.3"
   }
 }
