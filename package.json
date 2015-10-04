@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "mini templates for node-express with reactjs",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ikasumiwt/node-express-with-react.git"
@@ -22,13 +19,26 @@
   "bugs": {
     "url": "https://github.com/ikasumiwt/node-express-with-react/issues"
   },
-  "homepage": "https://github.com/ikasumiwt/node-express-with-react#readme",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
   "dependencies": {
-    "body-parser": "^1.13.3",
-    "express": "^4.13.3",
+    "babel": "^5.8.23",
+    "body-parser": "~1.13.2",
+    "consolidate": "^0.13.1",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "morgan": "~1.6.1",
     "node-jsx": "^0.13.3",
     "react": "^0.13.3",
-    "react-bootstrap": "^0.25.1",
+    "react-bootstrap": "^0.25.2",
+    "serve-favicon": "~2.3.0",
     "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babelify": "^6.3.0"
   }
 }
