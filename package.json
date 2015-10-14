@@ -23,7 +23,6 @@
     "start": "node ./bin/www",
     "test": "gulp",
     "build": "browserify ./src/index.js -t babelify -o ./public/javascripts/bundle.js"
-    
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -43,6 +42,7 @@
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
     "gulp-eslint": "^1.0.0"
   }
 }
