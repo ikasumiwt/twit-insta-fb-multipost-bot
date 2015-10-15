@@ -1,5 +1,6 @@
 var gulp = require( 'gulp' );
 var eslint = require( 'gulp-eslint' );
+var babel = require("gulp-babel");
 
 
 gulp.task( 'lint', function() {
@@ -9,16 +10,18 @@ gulp.task( 'lint', function() {
         .pipe( eslint.failOnError() );
 } );
 
-gulp.task( 'watch', function() {
-    gulp.watch( './src/*.js', function( event ) {
-
-      watcher.on('change', function(event) {
-        console.log('File running tasks...');
-      });
-        //gulp.run( 'lint' );
-    } );
-} );
-
 gulp.task( 'default', [ 'lint' ], function() {
+    gulp.run( 'babel' );
     gulp.run( 'watch' );
 } );
+
+gulp.task('babel', function() {
+    gulp.src('./src/test.js')
+        .pipe(babel())
+        .pipe(gulp.dest('./test.js'))
+});
+
+gulp.task('watch', function() {
+        gulp.watch('./src/test.js', ['babel'])
+});
+

@@ -1,67 +1,34 @@
-var express = require( 'express' );
-var path = require( 'path' );
-var favicon = require( 'serve-favicon' );
-var logger = require( 'morgan' );
-var cookieParser = require( 'cookie-parser' );
-var bodyParser = require( 'body-parser' );
+'use strict';
 
-var routes = require( './routes/index' );
-var lists = require( './routes/lists' );
-var test = require( './routes/test' );
-
-var app = express();
-
-// view engine setup
-app.set('views', path.join( __dirname, 'views' ) );
-//use HTML template with underscore
-app.engine( 'html', require( 'consolidate' ).underscore );
-app.set( 'view engine', 'html' );
-//app.set( 'view engine', 'jade' );
-
-// uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
-app.use( logger('dev') );
-app.use( bodyParser.json() );
-app.use( bodyParser.urlencoded( { extended: false } ) );
-app.use( cookieParser() );
-app.use( express.static( path.join( __dirname, 'public') ) );
-
-app.use( '/', routes );
-app.use( '/lists', lists );
-app.use( '/test', test );
-
-// catch 404 and forward to error handler
-app.use( function( req, res, next ) {
-
-  var err = new Error( 'Not Found' );
-  err.status = 404;
-  next( err );
+Object.defineProperty(exports, '__esModule', {
+  value: true
 });
 
-// error handlers
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-// development error handler
-// will print stacktrace
-if (app.get( 'env' ) === 'development' ) {
-  app.use( function( err, req, res, next ) {
-    res.status( err.status || 500 );
-    res.render( 'error', {
-      message: err.message,
-      error: err
-    } );
-  } );
-}
+var _react = require('react');
 
-// production error handler
-// no stacktraces leaked to user
-app.use( function( err, req, res, next ) {
+var _react2 = _interopRequireDefault(_react);
 
-  res.status( err.status || 500 );
-  res.render( 'error', {
-    message: err.message,
-    error: {}
-  } );
-} );
+var App = _react2['default'].createClass({
+  displayName: 'App',
 
+  getInitialState: function getInitialState() {
+    return {
+      name: 'World'
+    };
+  },
 
-module.exports = app;
+  render: function render() {
+    return _react2['default'].createElement(
+      'div',
+      null,
+      'Hello, ',
+      this.state.name,
+      '!'
+    );
+  }
+});
+
+exports.App = App;
+exports['default'] = App;
