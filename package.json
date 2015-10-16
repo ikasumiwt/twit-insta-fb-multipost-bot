@@ -40,9 +40,7 @@
   },
   "devDependencies": {
     "babel": "^5.8.23",
-    "babelify": "^6.3.0",
     "gulp": "^3.9.0",
-    "gulp-babel": "^5.2.1",
     "gulp-eslint": "^1.0.0"
   }
 }
