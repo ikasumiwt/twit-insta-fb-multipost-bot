@@ -4,8 +4,8 @@ import React from 'react';
 
 import App from './app.js';
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener( 'DOMContentLoaded', () => {
 
-    let app = React.createElement(App, {});
-    React.render(app, document.body);
-}, false);
+    let app = React.createElement( App, {} );
+    React.render( app, document.body );
+}, false );

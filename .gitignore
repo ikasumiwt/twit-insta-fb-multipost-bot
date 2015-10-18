@@ -13,4 +13,5 @@
 /tmp
 
 /.env
-/public/javascripts/bundle.js
+/public/*
+

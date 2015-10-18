@@ -11,12 +11,13 @@
     },
 
     "rules": {
-        "quote": [ 1, "single" ],
+        "quotes": [ 1, "single" ],
         "comma-style": [ 1, "last" ], //カンマ区切りの場合末尾にカンマつける
         "consistent-this": [ 1, "self" ], //thisはselfで統一
         "indent": [ 1, 4 ],
         "curly": 1, //中括弧強制
-        "jsx-quotes": [ 1, "prefer-double" ],
+        "eqeqeq": 1, //===
+        //"jsx-quotes": [ 1, "prefer-double" ],
         "key-spacing": [ 1, { "beforeColon": true, "afterColon": true } ],
         "no-spaced-func": 1,
         "no-underscore-dangle": 1,
