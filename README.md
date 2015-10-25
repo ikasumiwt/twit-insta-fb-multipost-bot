@@ -1,6 +1,8 @@
 #node-express-with-react
 
-minumum node + reactjs templates
+ikasumi_wtのNodejsの開発環境です。
+
+Nodejs + Express + React + underscore
 
 
 #LISENCE
