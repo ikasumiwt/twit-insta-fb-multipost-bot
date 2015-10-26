@@ -18,7 +18,7 @@
     "url": "https://github.com/ikasumiwt/twit-insta-fb-multipost-bot/issues"
   },
   "scripts": {
-    "start": "node cron.js",
+    "start": "node app.js",
     "test": "echo 'ok'"
   },
   "dependencies": {
