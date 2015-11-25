@@ -6,10 +6,10 @@ var tweetSchedule = require( './tasks/tweetSchedule' );
 
 
 var twit = new Twit({
-  consumer_key: app.get('options').key,
-  consumer_secret: app.get('options').secret,
-  access_token: app.get('options').token,
-  access_token_secret: app.get('options').token_secret
+  consumer_key: app.get('options').tw_key,
+  consumer_secret: app.get('options').tw_secret,
+  access_token: app.get('options').tw_token,
+  access_token_secret: app.get('options').tw_token_secret
 });
 
 //herokuが勝手に切れないようにするためにとりあえずcronは3min毎ぐらいで動かしておく

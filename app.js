@@ -3,11 +3,13 @@ var app = express();
 
 // 環境変数から Titter アプリケーションのキー等を取得
 var options = {
-  key: process.env.TWIBOT_TWITTER_KEY,
-  secret: process.env.TWIBOT_TWITTER_SECRET,
-  token: process.env.TWIBOT_TWITTER_TOKEN,
-  token_secret: process.env.TWIBOT_TWITTER_TOKEN_SECRET
+  tw_key: process.env.BOT_TWITTER_KEY,
+  tw_secret: process.env.BOT_TWITTER_SECRET,
+  tw_token: process.env.BOT_TWITTER_TOKEN,
+  tw_token_secret: process.env.BOT_TWITTER_TOKEN_SECRET
 };
+
+
 app.set('options', options);
 
 app.set('port', (process.env.PORT || 5000));
