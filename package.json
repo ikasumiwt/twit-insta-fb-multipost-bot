@@ -1,7 +1,7 @@
 {
   "name": "test-bot",
   "version": "0.0.1",
-  "description": "mini multipost test bot",
+  "description": "mini multipost test bot (twitter facebook)",
   "main": "app.js",
   "repository": {
     "type": "git",
